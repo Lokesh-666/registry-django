@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Choose User</title>
+  </head>
+  <body>
+    <h1>Choose User Type</h1>
+    <button onclick="redirectToSignup('doctor')">Doctor</button>
+    <button onclick="redirectToSignup('patient')">Patient</button>
+
+    <script>
+      function redirectToSignup(userType) {
+        window.location.href = `/signup/${userType}`;
+      }
+    </script>
+  </body>
+</html>
